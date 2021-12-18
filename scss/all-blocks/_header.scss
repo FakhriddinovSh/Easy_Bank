@@ -1,3 +1,38 @@
+// Navbar started
 .header{
+    box-shadow: 0 0 3px;
+    height: 80px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 165px;
+    &__nav{
+        display: flex;
+        list-style: none;        
+    }
+    &__nav__item > a{
+        position: relative;
+        font-family: 'Public Sans', sans-serif;
+        text-decoration: none;
+        color: rgba(149, 151, 165, 1);
+        padding-right: 30px;
+    }
+
+    &__button{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+        background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+        border: 1px solid;
+        padding: 8px 33px;
+        border-radius: 22px;
+        &:active{
+            cursor: pointer;
+            background: linear-gradient(135deg, #33d35e86 0%, #2ab6d98c 99.58%);
+        }
+    }
 }
 

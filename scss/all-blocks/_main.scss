@@ -1,0 +1,48 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &__left{
+        width: 50%;
+        margin-bottom: 200px;
+    }
+    &__right{
+        width: 50%;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            background: url(../../img/hero-bg-desktop.png);
+            background-repeat: no-repeat;
+            width: 1233px;
+            height: 649px;
+            bottom: 0;
+            top: 0;
+            right: -620px;
+            z-index: -1;
+        }
+        &__img > img{
+            width: 728px;
+            height: 899px;
+        }
+    }
+    &__left__title{
+        font-family: 'Public Sans';
+        font-size: 56px;
+        font-weight: 100;
+        line-height: 64px;
+        letter-spacing: -1px;
+        text-align: left;
+        color: rgba(45, 49, 77, 1);
+    }
+    &__left__desc{
+        font-family: 'PublicSans' ;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.28125px;
+        text-align: left;
+        color: rgba(149, 151, 165, 1);
+        width: 70%;
+    }
+}
